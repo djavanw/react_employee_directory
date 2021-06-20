@@ -1,40 +1,35 @@
+//import React, {Component} from "react";
+import React, { useState, useEffect } from "react";
 import Title from "../components/Title"
 import Search from "../components/Search";
 import Table from "../components/Table";
-import {Component} from "react";
+
 import API from "../utils/API";
 
-class Employee extends Component {
-    state = {
-        employee: "",
-        arrayEmployees: []
-    };
+const Employee = () => {
+    const [employee, setEmployee] = useState([]);
+    const [employeeFiltered, setEmployeeFiltered] = useState([]);
+    const [employeeSorted, setEmployeeSorted] = useState("ascend");
 
-    componentDidMount() {
-        this.mountEmployees()
-    };
-
-    mountEmployees = () => {
-        API.getRandomPeople()
-            .then(res => {
-                this.setState({ results: res.data.results });
-            console.log(this.state.results);
+    useEffect(() => {
+        API.getRandomPeople().then((pull) => {
+            setEmployee(pull.data.results[0].name.first)
+            console.log(pull.data.results[0].name.first)
+            
+            setEmployeeFiltered(pull.data.results)
         })
-        .catch(error => console.log(error));
-    }
+    }, [setEmployeeSorted]);
 
-    render(){
-        return (
+    return (
             // parent wrapper
             <>
             
                 <Title />
                 <Search />
-                <Table results={this.state.results} />
+                <Table setEmployee={employee}  />
             </>
     
         )
-    }
 };
 
 export default Employee;

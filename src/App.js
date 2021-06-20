@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
-import Employee from "./pages/employee"
+import Employee from "./pages/employee";
+
 function App() {
   return (
   <Employee />

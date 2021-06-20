@@ -1,6 +1,6 @@
-import Title from "../components/title"
-import Search from "../components/search";
-import Table from "../components/table";
+import Title from "../components/Title"
+import Search from "../components/Search";
+import Table from "../components/Table";
 import {Component} from "react"
 class Employee extends Component {
 
@@ -8,6 +8,7 @@ class Employee extends Component {
         return (
             // parent wrapper
             <>
+            
                 <Title />
                 <Search />
                 <Table />

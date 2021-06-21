@@ -8,17 +8,19 @@ import API from "../utils/API";
 
 const Employee = () => {
     const [employee, setEmployee] = useState([]);
-    const [employeeFiltered, setEmployeeFiltered] = useState([]);
-    const [employeeSorted, setEmployeeSorted] = useState("ascend");
+    //const [employeeFiltered, setEmployeeFiltered] = useState([]);
+    //const [employeeSorted, setEmployeeSorted] = useState("ascend");
 
     useEffect(() => {
         API.getRandomPeople().then((pull) => {
-            setEmployee(pull.data.results[0].name.first)
+            setEmployee(pull.data.results)
             console.log(pull.data.results[0].name.first)
+            console.log(pull.data.results[1].picture.thumbnail)
+            console.log(employee)
             
-            setEmployeeFiltered(pull.data.results)
+            //setEmployeeFiltered(pull.data.results)
         })
-    }, [setEmployeeSorted]);
+    }, [setEmployee]);
 
     return (
             // parent wrapper

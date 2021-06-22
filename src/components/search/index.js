@@ -7,29 +7,30 @@ function Search(props) {
         setUserQuery(event.target.value);
     }
 
-    const handleKeyPress = event => {
-        if(event.key ==="Enter") {
-            searchQuery();
-        }
-    }
+    // Practice code const handleKeyPress = event => {
+    //     if(event.key ==="Enter") {
+    //         searchQuery();
+    //     }
+    // }
 
-    const searchQuery = () => {
-        window.open(`https://google.com/search?q=${userQuery}`, "_blank");
-    }
+    // Practice code const searchQuery = () => {
+    //     window.open(`https://google.com/search?q=${userQuery}`, "_blank");
+    // }
 
 
 
     return(
         <div class="input-group">
             <div className = "navbar-toggler">
-                <input type="search" placeholder="Enter Name" onChange={props.searchBar}  />
+                <input type="search" placeholder="Enter Name" onChange={updateUserQuery}  />
                 <button onClick={props.searchBarListing}>Real Employee Search Button</button>
             </div>
             
-            <div className = "form">
+
+            {/* Practice code <div className = "form">
                 <input value={userQuery} onChange={updateUserQuery} onKeyPress={handleKeyPress} />
                 <button onClick={searchQuery}>New Search</button>
-            </div>
+            </div> */}
         </div>
     )
 }

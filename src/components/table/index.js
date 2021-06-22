@@ -1,6 +1,6 @@
 
 const Table = (props) => {
-  console.log(props.setEmployee)
+  console.log(props.employee)
   return(
     <table className="table table-striped">
       <thead>
@@ -16,7 +16,7 @@ const Table = (props) => {
       </thead>
       <tbody>
           
-            {props.setEmployee.map((bigData, index) => (
+            {props.employee.map((bigData, index) => (
           
           <tr key={index}>
             

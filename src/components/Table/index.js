@@ -7,8 +7,8 @@ const Table = (props) => {
         <tr className=" mb-4">
           <th scope="col">Photo</th>
           <th scope="col">Ref ID</th>
-          <th scope="col"  onClick={() => props.sort("first")}>First Name <i class="fas fa-sort-alpha-up"></i></th>
-          <th scope="col" onClick={() => props.sort("last")}>Last Name <i class="fas fa-sort-alpha-up"></i></th>
+          <th scope="col" onClick={() => props.sort("first")}><button class="btn btn-primary btn-sm">First Name <i class="fas fa-sort-alpha-up"></i></button>   </th>
+          <th scope="col" onClick={() => props.sort("last")}><button class="btn btn-primary btn-sm">Last Name <i class="fas fa-sort-alpha-up"></i></button>  </th>
           <th scope="col">Email</th>
           <th scope="col">Phone</th>
           <th scope="col">Age</th>

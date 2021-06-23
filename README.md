@@ -22,7 +22,7 @@
 
 ***
   ## Demonstration:
-  [Deployed Website Link on Heroku]()
+  [Deployed Website Link on GitHub](https://djavanw.github.io/react_employee_directory/)
 
 ***
   ## Installation:

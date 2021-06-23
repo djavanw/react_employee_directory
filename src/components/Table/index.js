@@ -5,13 +5,13 @@ const Table = (props) => {
     <table className="table table-striped">
       <thead>
         <tr className=" mb-4">
-          <th scope="col">picture</th>
-          <th scope="col">ref id</th>
-          <th scope="col"  onClick={() => props.sort("first")}>first <i class="fas fa-sort-alpha-up"></i></th>
-          <th scope="col" onClick={() => props.sort("last")}>last <i class="fas fa-sort-alpha-up"></i></th>
-          <th scope="col">email</th>
-          <th scope="col">phone</th>
-          <th scope="col">age</th>
+          <th scope="col">Photo</th>
+          <th scope="col">Ref ID</th>
+          <th scope="col"  onClick={() => props.sort("first")}>First Name <i class="fas fa-sort-alpha-up"></i></th>
+          <th scope="col" onClick={() => props.sort("last")}>Last Name <i class="fas fa-sort-alpha-up"></i></th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Age</th>
         </tr>
       </thead>
       <tbody>
@@ -20,7 +20,7 @@ const Table = (props) => {
           
           <tr key={index}>
             
-            <td><img src={bigData.picture.thumbnail} alt={`employee profile of ${bigData.name.last}`}/> </td>
+            <td><img src={bigData.picture.large} alt={`employee profile of ${bigData.name.last}`}/> </td>
             <td>{index + 100}</td>
             <td>{bigData.name.first}</td>
             <td>{bigData.name.last}</td>

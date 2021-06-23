@@ -23,7 +23,7 @@ function Search(props) {
     return(
         <div class="input-group">
             <div className = "navbar-toggler">
-                <input type="search" placeholder="Enter Name" onChange={updateUserQuery}  />
+                <input type="search" placeholder="Enter Employee Name" onChange={updateUserQuery}  />
                 
             </div>
             

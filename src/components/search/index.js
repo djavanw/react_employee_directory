@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
 function Search(props) {
-    const [userQuery, setUserQuery] = useState("");
+    //const [userQuery, setUserQuery] = useState("");
     const updateUserQuery = event => {
-        console.log("userQuery", userQuery);
-        setUserQuery(event.target.value);
+        //console.log("userQuery", userQuery);
+       // setUserQuery(event.target.value);
+        props.searchBar(event);
     }
 
     // Practice code const handleKeyPress = event => {
@@ -23,7 +24,7 @@ function Search(props) {
         <div class="input-group">
             <div className = "navbar-toggler">
                 <input type="search" placeholder="Enter Name" onChange={updateUserQuery}  />
-                <button onClick={props.searchBarListing}>Real Employee Search Button</button>
+                
             </div>
             
 
@@ -34,5 +35,5 @@ function Search(props) {
         </div>
     )
 }
-
+//<button onClick={props.searchBarListing}>Real Employee Search Button</button>
 export default Search;

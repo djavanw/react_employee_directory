@@ -35,6 +35,16 @@ const Employee = () => {
        console.log(searchBarListing);
         setEmployeeSearch(searchBarListing);
     }
+    const sort = (columnName) => {
+        
+        let sortedEmployee = employeeSearch.sort((a, b )=> {
+            return a.name[columnName].localeCompare(b.name[columnName])
+
+        }) 
+        //serialization reformatting array a
+        sortedEmployee = sortedEmployee.map(employee => employee)
+        setEmployeeSearch(sortedEmployee)
+    }
 
     return (
             // parent wrapper
@@ -42,7 +52,7 @@ const Employee = () => {
             
                 <Title />
                 <Search searchBar={searchBar} />
-                <Table employee={employee}  />
+                <Table employee={employeeSearch}  sort={sort} />
             </>
     
         )

@@ -7,8 +7,8 @@ const Table = (props) => {
         <tr className=" mb-4">
           <th scope="col">picture</th>
           <th scope="col">ref id</th>
-          <th scope="col">first</th>
-          <th scope="col">last</th>
+          <th scope="col"  onClick={() => props.sort("first")}>first <i class="fas fa-sort-alpha-up"></i></th>
+          <th scope="col" onClick={() => props.sort("last")}>last <i class="fas fa-sort-alpha-up"></i></th>
           <th scope="col">email</th>
           <th scope="col">phone</th>
           <th scope="col">age</th>
@@ -33,6 +33,8 @@ const Table = (props) => {
       </tbody>
     </table>
   )
+  
+
 }
 
 export default Table; 

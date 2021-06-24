@@ -5,7 +5,7 @@
 ***
 
   ## Description:
-  This application uses several technologies that will allow a user to tracker a simple budget.  The application can sense if there is an internet connection to ensure the transaction is save online or offline.    
+  This application allows an directory view of employees to be seen by a user. The application presents a list of 50 employees with their photo, ref id, name, email address, and their age.  There is a search bar to find employees and the first name and last names can be toggled from A to Z.    
    
 ***
   ## Table of Contents:
@@ -26,39 +26,39 @@
 
 ***
   ## Installation:
-  To use this application, the user can fork or clone.  Then run `npm install`. See the technologies section for the application dependencies.  In addition, the user will need to connect to an active or local Mongo database server for full functionality.  However, any users may freely use this deployed application at the above deploy application website.
+  To use this application, the user can fork or clone.  Then run `npm install`. See the technologies section for the application dependencies.  Then to run this application locally, then type `npm run start`.  
 
 ***
   ## Screenshots:
   ### (Deployed Application)
-  ![Deployed Application](./public/images/)
+  ![Deployed Application](./public/images/employee_directory_deployed.jpeg)
 
-  ### (Entering Multiple Transactions)
-  ![Entering Multiple Transactions](./public/images/)
+  ### (Sorting A-Z By First Name)
+  ![Entering Multiple Transactions](./public/images/sort_by_first_name.jpeg)
 
-  ### (Entering Transaction No Internet)
-  ![Entering Transaction No Internet](./public/images/)
+  ### (Sorting A-Z By Last Name)
+  ![Entering Transaction No Internet](./public/images/sort_by_last_name.jpeg)
 
-  ### (Clearing IndexedDB to Save In MongoDB)
-  ![Clearing IndexedDB to Save In MongoDB](./public/images/)
+  ### (Filter Search For Employee)
+  ![Clearing IndexedDB to Save In MongoDB](./public/images/filter_search_for_employee_joy.jpeg)
 
-  ### (Offline Transactions Saved to Database)
-  ![Offline Transactions Saved to Database](./public/images/)
+  ### (Filter Search Found Employee)
+  ![Offline Transactions Saved to Database](./public/images/found_employee_joy.jpeg)
 
 ***
   ## Technologies
-    - Node.js
-    - Express.js
-    - MongoDB
-    - Mongoose
-    - Javascript
-    - Dotenv
-    - Morgan
+    - React.js
+    - React Hooks
+    - React Components
+    - Axios
+    - HTML
+    - JavaScript
+    - CSS
     - Bootstrap
-    - indexedDB 
+ 
 
   ## Usage:
-  This application utilizes several web and database technologies that allows a user to enter transactions that are saved in a budget tracker.  The transactions are saved in MongDb when there is an internet connection and index_db when the application is offline.  Offline transactions are saved in the index_db until the application goes back online.  The storage of the transaction is transparent to the average user and is seemlessly stored into a Mongo database. The Morgan logger module is used to monitor user request and responses.   
+  This application allows the user to search the directory by employee first or last name.  In addition, the first name or last name columns can be sorted from A to Z.  There are buttons that allow toggling between the two.  The employees for this application are generated through the randomuser.me API.   
    
 ***
   ## License:
@@ -80,7 +80,7 @@
 
 ***
   ## Tests:
-  The web browser can be used to test this application.  Transactions and the dollar amounts can be inputted and then verified if the data is saved in index_db when offline and Mongodb Atlas with online.  In addition, data/communication routes must be verified before this application can be properly deployed. In addition, there must be an operational database and it must be connected to the application to receive the full functionality.  
+  No special test were run to complete this application.  However, console logs were setup throughout the application to ensure data was being pulled from the API.  
 
 ***
   ## Questions:

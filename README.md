@@ -47,14 +47,14 @@
 
 ***
   ## Technologies
-    - React.js
-    - React Hooks
-    - React Components
-    - Axios
-    - HTML
-    - JavaScript
-    - CSS
-    - Bootstrap
+  - React.js
+  - React Hooks
+  - React Components
+  - Axios
+  - HTML
+  - JavaScript
+  - CSS
+  - Bootstrap
  
 
   ## Usage:

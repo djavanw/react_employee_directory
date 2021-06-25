@@ -34,16 +34,16 @@
   ![Deployed Application](./public/images/employee_directory_deployed.jpeg)
 
   ### (Sorting A-Z By First Name)
-  ![Entering Multiple Transactions](./public/images/sort_by_first_name.jpeg)
+  ![Sorting A-Z By First Name](./public/images/sort_by_first_name.jpeg)
 
   ### (Sorting A-Z By Last Name)
-  ![Entering Transaction No Internet](./public/images/sort_by_last_name.jpeg)
+  ![Sorting A-Z By Last Name](./public/images/sort_by_last_name.jpeg)
 
-  ### (Filter Search For Employee)
-  ![Clearing IndexedDB to Save In MongoDB](./public/images/filter_search_for_employee_joy.jpeg)
+  ### (Filter Search For Employee, By First Or Last Name)
+  ![Filter Search For Employee, By First Or Last Name](./public/images/filter_search_for_employee_joe.jpeg)
 
   ### (Filter Search Found Employee)
-  ![Offline Transactions Saved to Database](./public/images/found_employee_joy.jpeg)
+  ![Filter Search Found Employee](./public/images/found_employee_joe.jpeg)
 
 ***
   ## Technologies

@@ -21,7 +21,7 @@ const Table = (props) => {
           
           <tr key={index}>
             
-            <td><img src={bigData.picture.large} alt={`employee profile of ${bigData.name.last}`}/> </td>
+            <td><img src={bigData.picture.large} alt={`employee profile photo`}/> </td>
             <td>{index + 100}</td>
             <td>{bigData.name.first}</td>
             <td>{bigData.name.last}</td>

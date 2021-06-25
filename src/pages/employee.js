@@ -9,8 +9,7 @@ import API from "../utils/API";
 const Employee = () => {
     const [employee, setEmployee] = useState([]);
     const [employeeSearch, setEmployeeSearch] = useState([]);
-    //const [employeeFiltered, setEmployeeFiltered] = useState([]);
-    //const [employeeSorted, setEmployeeSorted] = useState("ascend");
+    
 
     useEffect(() => {
         API.getRandomPeople().then((pull) => {
@@ -18,9 +17,7 @@ const Employee = () => {
             setEmployeeSearch(pull.data.results)
             console.log(pull.data.results[0].name.first)
             console.log(pull.data.results[1].picture.thumbnail)
-            console.log(employee)
-            
-            //setEmployeeFiltered(pull.data.results)
+            console.log(setEmployee)
         })
     }, [setEmployee]);
 

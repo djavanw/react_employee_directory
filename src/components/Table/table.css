@@ -1,0 +1,23 @@
+#tableStriped > tbody > tr:nth-of-type(odd) {
+    background-color: #ADC3D1;
+}
+
+/* Add hover affect next major version update. */
+/*
+.hoverTip {
+    position: relative;
+    display: inline-block;
+}
+
+.hoverTip .toolText {
+    visibility: hidden;
+    position: absolute;
+    color: red;
+    z-index: 1;
+}
+
+.hoverTip:hover .toolText {
+    visibility: visible;
+}
+ */
+

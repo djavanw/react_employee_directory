@@ -1,13 +1,14 @@
+import "./table.css"
 
 const Table = (props) => {
   console.log(props.employee)
   return(
-    <table className="table table-striped">
+    <table className="table table-striped" id="tableStriped">
       <thead>
         <tr className=" mb-4">
           <th scope="col">Photo</th>
           <th scope="col">Ref ID</th>
-          <th scope="col" onClick={() => props.sort("first")}><button class="btn btn-primary btn-sm">First Name <i class="fas fa-sort-alpha-up"></i></button>   </th>
+          <th scope="col" class="hoverTip" onClick={() => props.sort("first")}><button class="btn btn-primary btn-sm toolText">First Name <i class="fas fa-sort-alpha-up"></i></button>   </th>
           <th scope="col" onClick={() => props.sort("last")}><button class="btn btn-primary btn-sm">Last Name <i class="fas fa-sort-alpha-up"></i></button>  </th>
           <th scope="col">Email</th>
           <th scope="col">Phone</th>
